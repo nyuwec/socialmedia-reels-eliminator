@@ -1,0 +1,16 @@
+{  
+  "manifest_version": 3,  
+  "name": "Social Media Reels Remover",  
+  "version": "1.0",  
+  "description": "Removes the Reels section from YouTube and Facebook.",  
+  "permissions": ["activeTab"],  
+  "content_scripts": [  
+    {  
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://www.facebook.com/*"
+      ],  
+      "js": ["content.js"]  
+    }  
+  ]  
+}
